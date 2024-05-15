@@ -19,7 +19,6 @@
     background-size: cover;
 
     .list{
-        color: variables.$textColor;
         position: absolute;
         right: 100;
         top: 100;
@@ -51,5 +50,33 @@
         color: variables.$textColor;
         font-size: 3em;
         font-weight: 900;
+    }
+
+    @media(max-width: 568px){
+
+        .containerTitle{
+            padding: 0 50px;
+            align-items: start;
+        }
+    }
+
+    @media(max-width: 388px){
+
+        h1{
+            font-size: 2em;
+        }
+
+        .containerTitle{
+            font-size: 1em;
+        }
+        #count{
+            font-size: 2.5em;
+        }
+
+        .list{
+            right: 60;
+            top: 80;
+            padding: 15px;  
+        }
     }
 }
