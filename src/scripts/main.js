@@ -16,13 +16,8 @@ const eventDate = new Date("Jul 22, 2024, 19:00:00");
     const hours = Math.floor((timeToEvent % daysMiliseconds) / hoursMiliseconds)
     const minuts = Math.floor((timeToEvent % hoursMiliseconds) / minutsMiliseconds)
     const seconds = Math.floor((timeToEvent % minutsMiliseconds) / 1000)
-    // console.log(timeToEvent)
-    // console.log(days)
-    // console.log(hours)
-    // console.log(minuts)
-    // console.log(seconds)
 
-    document.getElementById('count').innerHTML = `${days}D ${hours}H ${minuts}M ${seconds}S`
+    document.getElementById('count').innerHTML = `${days} Days ${hours}:${minuts}:${seconds}s`
 
     if (timeToEvent < 0){
         clearInterval(countdownInterval)
